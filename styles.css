@@ -184,5 +184,11 @@ footer {
     .social-button {
         width: 100%; /* Mobile වලදී buttons full width ගන්නවා */
         justify-content: center; /* Text center කරනවා */
+body {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
     }
 }
