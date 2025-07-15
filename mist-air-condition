@@ -1,1 +1,129 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- මෙතන HTML document එකේ metadata තියෙනවා -->
+    <meta charset="UTF-8"> <!-- මෙතනින් character encoding එක UTF-8 කරනවා -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- මෙතනින් mobile responsiveness එක හදනවා -->
+    <title>Mist Auto Air Condition</title> <!-- මෙතන තියෙන්නේ website එකේ title එක -->
+    <link rel="stylesheet" href="styles.css"> <!-- මෙතනින් styles.css file එක HTML එකට link කරනවා -->
+
+    <!-- 🚀 Structured Metadata: Schema.org JSON-LD format -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AutomotiveBusiness",
+      "name": "Mist Auto A/C",
+      "image": "https://mistautoac.lk/logo.jpg",
+      "url": "https://mistautoac.lk",
+      "telephone": "+94711597373",
+      "email": "Engineeringmist@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "F31 Kannaththota",
+        "addressLocality": "Ruwanwella",
+        "addressRegion": "Sabaragamuwa",
+        "addressCountry": "LK"
+      },
+      "openingHours": "Mo-Sa 08:00-18:00",
+      "sameAs": [
+        "https://www.facebook.com/Aselasenarath20",
+        "https://youtube.com/@mist-auto-ac",
+        "https://x.com/MistAuto89473",
+        "https://wa.me/94711597373",
+        "https://maps.app.goo.gl/814t8NRZodujZfcK6"
+      ]
+    }
+    </script>
+</head>
+
+<html lang="en">
+<head>
+    <!-- මෙතන HTML document එකේ metadata තියෙනවා -->
+    <meta charset="UTF-8"> <!-- මෙතනින් character encoding එක UTF-8 කරනවා -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- මෙතනින් mobile responsiveness එක හදනවා -->
+    <title>Mist Auto Air Condition</title> <!-- මෙතන තියෙන්නේ website එකේ title එක -->
+    <link rel="stylesheet" href="styles.css"> <!-- මෙතනින් styles.css file එක HTML එකට link කරනවා -->
+
+</head>
+<body oncontextmenu="return false;">
+    <!-- Header Section එක මෙතනින් පටන් ගන්නවා -->
+    <header>
+        <!-- ලෝගෝ එක තියෙන්නේ මෙතන -->
+        <div class="logo">
+            <img src="logo1.jpg" alt="Mist Auto Air Condition Logo"> <!-- මෙතනින් ලෝගෝ එක display කරනවා -->
+        </div>
+        <h1>Welcome to Mist Auto Air Condition</h1> <!-- මෙතන තියෙන්නේ website එකේ main title එක -->
+        <!-- Navigation menu එක මෙතනින් පටන් ගන්නවා -->
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li> <!-- Home link එක -->
+                <li><a href="#services">Services</a></li> <!-- Services link එක -->
+                <li><a href="https://mist-auto-ac-7vrmz9a.gamma.site/untitled-page-4" target="_blank">Accessories</a></li>
+                <li><a href="#about">About</a></li> <!-- About link එක -->
+                <li><a href="https://mist-auto-ac-7vrmz9a.gamma.site/untitled-page-3" target="_blank">Contact</a></li> <!-- Contact link එක external link එකකට redirect වෙනවා -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section එක මෙතනින් පටන් ගන්නවා -->
+    <section id="home">
+        <h2> </h2> <!-- Home section එකේ heading එක -->
+        <p>                                                                                                                                                                           your trusted specialist in auto and commercial air conditioning systems. With expert diagnostics, reliable repairs, and a commitment to quality, we keep you cool and comfortable on the road and at home. Experience service that truly cares..</p> <!-- Home section එකේ paragraph එක -->
+        <button onclick="window.location.href='https://mist-auto-ac-7vrmz9a.gamma.site/'">VIEW ALL SERVICES</button> <!-- Button එක click කරලා external link එකකට redirect වෙනවා -->
+    </section>
+
+    <!-- Services Section එක මෙතනින් පටන් ගන්නවා -->
+    <section id="services">
+        <h2>Our Services</h2> <!-- Services section එකේ heading එක -->
+        <ul> <!-- <ul> opening tag එක එකතු කළා -->
+            <li>Auto Air Conditioning</li> <!-- Service 1 -->
+            <li>Domestic Refrigerator & Air Condition</li> <!-- Service 2 -->
+            <li>Industrial Air Condition & Refrigerator</li> <!-- Service 3 -->
+        </ul> <!-- <ul> closing tag එක -->
+    </section>
+
+    <!-- About Section එක මෙතනින් පටන් ගන්නවා -->
+    <section id="about">
+        <h2>About Us</h2> <!-- About section එකේ heading එක -->
+        <p>With over 10 years of experience, we provide top-notch A/C repair services </p> <!-- About section එකේ paragraph එක -->
+    </section>
+
+    <!-- Contact Section එක මෙතනින් පටන් ගන්නවා -->
+    <section id="contact">
+        <h2>Contact Us</h2> <!-- Contact section එකේ heading එක -->
+        <!-- Contact details එකතු කරනවා -->
+<div class="contact-details">
+    <p>F31 Kannaththota, Ruwanwalla</p>
+    <p>Mobile: 071 159 7373</p>
+    <p>E-mail: <a href="Engineeringmist@gmail.com">Engineeringmist@gmail.com</a></p>
+</div>
+        <!-- Social media buttons එකතු කළා -->
+        <div class="social-buttons">
+            </a>
+            <a href="https://wa.me/94711597373" target="_blank" class="social-button whatsapp">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+            <a href="https://youtube.com/@mist-auto-ac?si=hr362_VIOgK1d8u5" target="_blank" class="social-button youtube">
+                <i class="fab fa-youtube"></i> YouTube
+            </a>
+            <a href="https://www.facebook.com/Aselasenarath20" target="_blank" class="social-button facebook">
+                <i class="fab fa-facebook-f"></i> Facebook
+            </a>
+            <a href="https://x.com/MistAuto89473" target="_blank" class="social-button twitter">
+                <i class="fab fa-twitter"></i> Twitter
+            </a>
+            <a href="https://maps.app.goo.gl/814t8NRZodujZfcK6" target="_blank" class="social-button google-maps">
+                <i class="fas fa-map-marker-alt"></i> Google Maps
+            </a>
+        </div>
+    </section>
+
+
+    <!-- Footer Section එක මෙතනින් පටන් ගන්නවා -->
+    <footer>
+        <p>© 2025 Mist Auto Air Condition. All rights reserved.</p> <!-- Footer එකේ copyright message එක -->
+    </footer>
+</body>
+</html>
 
