@@ -54,7 +54,7 @@ section {
 
 /* "Home" section එකට background image එක එකතු කරනවා */
 #home {
-    background-image: url('background.jpg'); /* ඔබේ image එකේ path එක මෙතන දෙන්න */
+    background-image: url('background1.jpg'); /* ඔබේ image එකේ path එක මෙතන දෙන්න */
     background-size:  cover;  /* Image එක section එකේ full size එකට fit වෙන්න */
     background-position: center; /* Image එක center කරනවා */
     background-repeat: no-repeat; /* Image එක repeat වෙන්න ඉඩ තියෙන්නේ නැහැ */
