@@ -1,128 +1,311 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
-<html lang="en">
+<html lang="si" class="scroll-smooth">
 <head>
-    <!-- මෙතන HTML document එකේ metadata තියෙනවා -->
-    <meta charset="UTF-8"> <!-- මෙතනින් character encoding එක UTF-8 කරනවා -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- මෙතනින් mobile responsiveness එක හදනවා -->
-    <title>Mist Auto Air Condition</title> <!-- මෙතන තියෙන්නේ website එකේ title එක -->
-    <link rel="stylesheet" href="styles.css"> <!-- මෙතනින් styles.css file එක HTML එකට link කරනවා -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- 🚀 Structured Metadata: Schema.org JSON-LD format -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "AutomotiveBusiness",
-      "name": "Mist Auto A/C",
-      "image": "https://mistautoac.lk/logo.jpg",
-      "url": "https://mistautoac.lk",
-      "telephone": "+94711597373",
-      "email": "Engineeringmist@gmail.com",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "F31 Kannaththota",
-        "addressLocality": "Ruwanwella",
-        "addressRegion": "Sabaragamuwa",
-        "addressCountry": "LK"
-      },
-      "openingHours": "Mo-Sa 08:00-18:00",
-      "sameAs": [
-        "https://www.facebook.com/Aselasenarath20",
-        "https://youtube.com/@mist-auto-ac",
-        "https://x.com/MistAuto89473",
-        "https://wa.me/94711597373",
-        "https://maps.app.goo.gl/814t8NRZodujZfcK6"
-      ]
-    }
-    </script>
+    <!-- 1. ප්‍රධාන මාතෘකාව (Title) - ඉතාම වැදගත් -->
+    <title>වායු සමීකරණ සහ ශීතකරණ අලුත්වැඩියාව | Mist Air Condition</title>
+
+    <!-- 2. වෙබ් පිටුවේ විස්තරය (Description) - Google ප්‍රතිඵල වල පෙන්වයි -->
+    <meta name="description" content="Mist Air Condition වෙතින් වසර 10ක පළපුරුද්ද සමඟ, වාහන, ගෘහස්ථ සහ කාර්මික වායු සමීකරණ (AC) සහ ශීතකරණ සඳහා විශ්වාසනීය අලුත්වැඩියා සහ සේවා. දැන්ම අමතන්න.">
+
+    <!-- 3. ප්‍රධාන වචන (Keywords) -->
+    <meta name="keywords" content="ac repair sri lanka,ac repair Ruwanwalla,ac repair kagalla,ac repair kannaththota,Auto ac Ruwanwalla,ac installation,mistautoac,  vehicle ac repair, domestic ac service, refrigerator repair, air condition service, වායු සමීකරණ අලුත්වැඩියාව, ශීතකරණ සේවා,A/C, වාහන ඒසී">
+
+    <!-- 4. Canonical URL - පිටපතක් නොවන බව තහවුරු කිරීමට -->
+    <link rel="canonical" href="https://mistautoac.lk/">
+
+    <!-- 5. Social Media Sharing (Open Graph - Facebook, WhatsApp, etc.) -->
+    <meta property="og:title" content="වායු සමීකරණ සහ ශීතකරණ අලුත්වැඩියාව | Mist Air Condition">
+    <meta property="og:description" content="වාහන, ගෘහස්ථ සහ කාර්මික AC සහ ශීතකරණ සඳහා විශ්වාසනීය සේවා.">
+    <meta property="og:image" content="https://github.com/Mist40/Mist40.github.io/blob/9036f9eaaf8d76c37a1751fd46ba5f9b0d793041/logo.jpg">
+    <meta property="og:url" content="https://mistautoac.lk/">
+    <meta property="og:type" content="website">
+
+    <!-- 6. Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="වායු සමීකරණ සහ ශීතකරණ අලුත්වැඩියාව | Mist Air Condition">
+    <meta name="twitter:description" content="වාහන, ගෘහස්ථ සහ කාර්මික AC සහ ශීතකරණ සඳහා විශ්වාසනීය සේවා.">
+    <meta name="twitter:image" content="https://github.com/Mist40/Mist40.github.io/blob/9036f9eaaf8d76c37a1751fd46ba5f9b0d793041/background.jpg">
+
+    <!-- අනෙකුත් CSS සහ Font සබැඳි -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Noto Sans Sinhala', sans-serif;
+            background-color: #f8fafc; /* light gray background */
+        }
+        .hero-bg {
+            background-image: linear-gradient(rgba(53, 50, 50, 0.6), rgba(56, 52, 52, 0.6)), url('cover.png');
+            background-size: cover;
+            background-position: center;
+        }
+        .nav-link.active {
+            color: #3b82f6;
+            font-weight: 700;
+        }
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background-color: #3b82f6;
+            margin: 10px auto 0;
+            border-radius: 2px;
+        }
+    </style>
 </head>
+<body class="text-gray-800">
 
-<html lang="en">
-<head>
-    <!-- මෙතන HTML document එකේ metadata තියෙනවා -->
-    <meta charset="UTF-8"> <!-- මෙතනින් character encoding එක UTF-8 කරනවා -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- මෙතනින් mobile responsiveness එක හදනවා -->
-    <title>Mist Auto Air Condition</title> <!-- මෙතන තියෙන්නේ website එකේ title එක -->
-    <link rel="stylesheet" href="styles.css"> <!-- මෙතනින් styles.css file එක HTML එකට link කරනවා -->
-
-</head>
-<body oncontextmenu="return false;">
-    <!-- Header Section එක මෙතනින් පටන් ගන්නවා -->
-    <header>
-        <!-- ලෝගෝ එක තියෙන්නේ මෙතන -->
-        <div class="logo">
-            <img src="logo1.jpg" alt="Mist Auto Air Condition Logo"> <!-- මෙතනින් ලෝගෝ එක display කරනවා -->
-        </div>
-        <h1>Welcome to Mist Auto Air Condition</h1> <!-- මෙතන තියෙන්නේ website එකේ main title එක -->
-        <!-- Navigation menu එක මෙතනින් පටන් ගන්නවා -->
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li> <!-- Home link එක -->
-                <li><a href="#services">Services</a></li> <!-- Services link එක -->
-                <li><a href="https://mist-auto-ac-7vrmz9a.gamma.site/untitled-page-4" target="_blank">Accessories</a></li>
-                <li><a href="#about">About</a></li> <!-- About link එක -->
-                <li><a href="https://mist-auto-ac-7vrmz9a.gamma.site/untitled-page-3" target="_blank">Contact</a></li> <!-- Contact link එක external link එකකට redirect වෙනවා -->
-            </ul>
+    <!-- Header & Navigation -->
+    <header id="header" class="bg-white shadow-md sticky top-0 z-50 transition-all duration-300">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#home" class="flex items-center space-x-2">
+                <img src="C:\Users\asela\Desktop\web mist\logo.png" alt="Mist Air Condition Logo" class="h-10 w-10 object-contain">
+                <span class="text-xl md:text-2xl font-bold text-blue-700">Mist Air Condition</span>
+            </a>
+            <div class="hidden md:flex space-x-8 text-gray-600 font-medium">
+                <a href="#home" class="nav-link hover:text-blue-600 transition" aria-current="page">මුල් පිටුව</a>
+                <a href="#about" class="nav-link hover:text-blue-600 transition">අප ගැන</a>
+                <a href="#services" class="nav-link hover:text-blue-600 transition">සේවාවන්</a>
+                <a href="#contact" class="nav-link hover:text-blue-600 transition">අමතන්න</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-700 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
         </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
+            <a href="#home" class="block py-2 px-6 text-sm hover:bg-gray-100" aria-current="page">මුල් පිටුව</a>
+            <a href="#about" class="block py-2 px-6 text-sm hover:bg-gray-100">අප ගැන</a>
+            <a href="#services" class="block py-2 px-6 text-sm hover:bg-gray-100">සේවාවන්</a>
+            <a href="#contact" class="block py-2 px-6 text-sm hover:bg-gray-100">අමතන්න</a>
+        </div>
     </header>
 
-    <!-- Home Section එක මෙතනින් පටන් ගන්නවා -->
-    <section id="home">
-        <h2> </h2> <!-- Home section එකේ heading එක -->
-        <p>                                                                                                                                                                           your trusted specialist in auto and commercial air conditioning systems. With expert diagnostics, reliable repairs, and a commitment to quality, we keep you cool and comfortable on the road and at home. Experience service that truly cares..</p> <!-- Home section එකේ paragraph එක -->
-        <button onclick="window.location.href='https://mist-auto-ac-7vrmz9a.gamma.site/'">VIEW ALL SERVICES</button> <!-- Button එක click කරලා external link එකකට redirect වෙනවා -->
-    </section>
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-bg text-white h-[10vh] min-h-[250px] flex items-center justify-center text-center">
+            <div class="container mx-auto px-6">
+                <h1 class="text-3xl md:text-5xl font-bold mb-4 leading-tight animate-fade-in-down text-sky-400">විශ්වාසනීය වායු සමීකරණ සහ ශීතකරණ සේවා</h1>
+                <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8 animate-fade-in-up">උසස් තත්වයේ අමතර කොටස් බාවිතා කරමින් වසර 10කට වැඩි පළපුරුදු දක්ෂ කාර්මික ශිල්පීන්ගේ සේවාව</p>
+                <a href="#contact" class="bg-white text-blue-700 font-bold py-3 px-8 rounded-full hover:bg-gray-200 transition-transform transform hover:scale-105 inline-block animate-bounce">දැන්ම අමතන්න</a>
+            </div>
+        </section>
 
-    <!-- Services Section එක මෙතනින් පටන් ගන්නවා -->
-    <section id="services">
-        <h2>Our Services</h2> <!-- Services section එකේ heading එක -->
-        <ul> <!-- <ul> opening tag එක එකතු කළා -->
-            <li>Auto Air Conditioning</li> <!-- Service 1 -->
-            <li>Domestic Refrigerator & Air Condition</li> <!-- Service 2 -->
-            <li>Industrial Air Condition & Refrigerator</li> <!-- Service 3 -->
-        </ul> <!-- <ul> closing tag එක -->
-    </section>
+        <!-- About Us Section -->
+        <section id="about" class="py-2 md:py-6 bg-slate-300">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold mb-4 section-title">අප කවුද?</h2>
+                <p class="max-w-3xl mx-auto text-sky-500 leading-relaxed">
+                    Mist Air Condition යනු ශ්‍රී ලංකාව තුළ වායු සමීකරණ සහ ශීතකරණ අලුත්වැඩියා ක්ෂේත්‍රයේ ප්‍රමුඛ නාමයකි. වසර 10කට අධික කාලයක් පුරා විහිදුණු අත්දැකීම් සමඟින්, ඕනෑම වර්ගයක වායු සමීකරණ සහ ශීතකරණ පද්ධතියක් සඳහා ඉහළම ගුණාත්මක සේවාවක් ලබා දීමට අපි කැපවී සිටිමු. අපගේ ප්‍රධාන අරමුණ වන්නේ, උසස් තත්වයේ අමතර කොටස් පමණක් භාවිතා කරමින්, අපගේ දක්ෂ සහ පළපුරුදු කාර්මික ශිල්පීන් හරහා ඔබේ අවශ්‍යතාවයට විශ්වාසනීය සහ කල්පවතින විසඳුමක් ලබා දීමයි.
+                </p>
+            </div>
+        </section>
 
-    <!-- About Section එක මෙතනින් පටන් ගන්නවා -->
-    <section id="about">
-        <h2>About Us</h2> <!-- About section එකේ heading එක -->
-        <p>With over 10 years of experience, we provide top-notch A/C repair services </p> <!-- About section එකේ paragraph එක -->
-    </section>
+        <!-- Services Section -->
+<section id="services" class="py-6 md:py-12 bg-gray-600">
+    <!-- දෝෂය 1 නිවැරදි කරන ලදී: class එක අවසානයේ " ලකුණ යොදන ලදී -->
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-12 section-title text-blue-600">අපගේ සේවාවන්</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            
+            <!-- Service Card 1 - ඡායාරූපය සමඟ -->
+<a href="https://mistautoac.lk/" target="_blank" class="block">
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                <!-- 1. මාතෘකාව සඳහා වන කොටස (ඡායාරූපයට ඉහළින්) -->
+                <div class="p-6 text-center bg-slate-300">
+                    <h3 class="text-xl font-bold text-gray-900">Mist Auto A/C</h3>
+                </div>
+                <!-- 2. ඡායාරූපය සහ විස්තරය සඳහා වන කොටස -->
+                <div class="relative min-h-[220px] flex items-end justify-center p-6 text-center text-white" 
+     style="background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('auto 2.png'); background-size: cover; background-position: center;">
+    
+                    <p class="text-gray-50">ඕනෑම වර්ගයක මෝටර් රථ සඳහා වායු සමීකරණ පද්ධති අලුත්වැඩියාව සහ සේවා කටයුතු. සියලුම අලුත්වැඩියාවන් සඳහා කල්පවතින විසඳුමක් ලබා දීමට, උසස් තත්ත්වයේ අමතර කොටස් පමණක් යොදා ගැනේ.</p>
+                </div>
+            </div> <!-- දෝෂය 2 නිවැරදි කරන ලදී: පළමු කාඩ් එකේ div ටැගය මෙතනින් වසන ලදී -->
+</a>
 
-    <!-- Contact Section එක මෙතනින් පටන් ගන්නවා -->
-    <section id="contact">
-        <h2>Contact Us</h2> <!-- Contact section එකේ heading එක -->
-        <!-- Contact details එකතු කරනවා -->
-<div class="contact-details">
-    <p>F31 Kannaththota, Ruwanwalla</p>
-    <p>Mobile: 071 159 7373</p>
-    <p>E-mail: <a href="Engineeringmist@gmail.com">Engineeringmist@gmail.com</a></p>
-</div>
-        <!-- Social media buttons එකතු කළා -->
-        <div class="social-buttons">
-            </a>
-            <a href="https://wa.me/94711597373" target="_blank" class="social-button whatsapp">
-                <i class="fab fa-whatsapp"></i> WhatsApp
-            </a>
-            <a href="https://youtube.com/@mist-auto-ac?si=hr362_VIOgK1d8u5" target="_blank" class="social-button youtube">
-                <i class="fab fa-youtube"></i> YouTube
-            </a>
-            <a href="https://www.facebook.com/Aselasenarath20" target="_blank" class="social-button facebook">
-                <i class="fab fa-facebook-f"></i> Facebook
-            </a>
-            <a href="https://x.com/MistAuto89473" target="_blank" class="social-button twitter">
-                <i class="fab fa-twitter"></i> Twitter
-            </a>
-            <a href="https://maps.app.goo.gl/814t8NRZodujZfcK6" target="_blank" class="social-button google-maps">
-                <i class="fas fa-map-marker-alt"></i> Google Maps
-            </a>
+            <!-- Service Card 2 - නව ව්‍යුහය සමඟ -->
+<a href="https://mistautoac.lk/" target="_blank" class="block">
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                <!-- 1. මාතෘකාව සඳහා වන කොටස (ඡායාරූපයට ඉහළින්) -->
+                <div class="p-6 text-center bg-slate-300">
+                    <h3 class="text-xl font-bold text-gray-900">Domestic A/C & Refrigerator</h3>
+                </div>
+                <!-- 2. ඡායාරූපය සහ විස්තරය සඳහා වන කොටස -->
+                <div class="relative min-h-[220px] flex items-end justify-center p-6 text-center text-yellow"
+                     style="background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('ac 2.png'); background-size: cover; background-position: center;">
+                    <p class="text-blue-50">නිවසේ භාවිතය සඳහා වන වායු සමීකරණ සහ ශීතකරණ අලුත්වැඩියාව සහ නඩත්තු සේවා. ඔබගේ උපකරණවල දීර්ඝකාලීන පැවැත්ම තහවුරු කිරීමට, උසස් තත්ත්වයේ අමතර කොටස් අප විසින් සපයනු ලැබේ.</p>
+                </div>
+            </div>
+</a>
+
+
+            <!-- Service Card 3 -->
+<a href="https://mistautoac.lk/" target="_blank" class="block">
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                <div class="p-6 text-center bg-slate-300">
+                    <h3 class="text-xl font-bold text-gray-900">Industrial AC & Refrigerator</h3>
+                </div>
+                <div class="relative min-h-[220px] flex items-end justify-center p-6 text-center text-black"
+                     style="background-image: linear-gradient(rgba(95, 98, 116, 0.2), rgba(101, 109, 127, 0.2)), url('hvac.png'); background-size: cover; background-position: center;">
+                    <p class="text-gray-50">කර්මාන්තශාලා සහ ව්‍යාපාරික ස්ථාන සඳහා වන විශාල පරිමාණයේ වායු සමීකරණ සහ ශීතකරණ සේවා.</p>
+                </div>
+            </div>
+
         </div>
-    </section>
+    </div>
+</section>
 
+        <!-- Why Choose Us Section -->
+        <section class="py-6 md:py-12 bg-blue-100">
+            <div class="container mx-auto px-6">
+                 <h2 class="text-3xl font-bold text-center mb-12 section-title">අප තෝරාගත යුත්තේ ඇයි?</h2>
+                 <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                    <div class="p-6">
+                        <div class="text-4xl text-blue-600 mb-3">🏆</div>
+                        <h4 class="font-bold text-lg">වසර 10+ පළපුරුද්ද</h4>
+                        <p class="text-gray-600 text-sm">ක්ෂේත්‍රයේ දශකයකට අධික විශ්වාසනීය අත්දැකීම්.</p>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-4xl text-blue-600 mb-3">🛠️</div>
+                        <h4 class="font-bold text-lg">දක්ෂ කාර්මික ශිල්පීන්</h4>
+                        <p class="text-gray-600 text-sm">පුහුණුව ලත්, පළපුරුදු කාර්මික ශිල්පීන්ගේ සේවය.</p>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-4xl text-blue-600 mb-3">⚙️</div>
+                        <h4 class="font-bold text-lg">උසස් අමතර කොටස්</h4>
+                        <p class="text-gray-600 text-sm">කල්පැවැත්ම සඳහා ගුණාත්මක බවින් යුතු අමතර කොටස් පමණි.</p>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-4xl text-blue-600 mb-3">🤝</div>
+                        <h4 class="font-bold text-lg">වගකීමක් සහිත විශ්වාසනීය සේවය</h4>
+                        <p class="text-gray-600 text-sm">පාරිභෝගික තෘප්තිය සහතික කරන සුහදශීලී සේවාවක්.</p>
+                    </div>
+                 </div>
+            </div>
+        </section>
 
-    <!-- Footer Section එක මෙතනින් පටන් ගන්නවා -->
-    <footer>
-        <p>© 2025 Mist Auto Air Condition. All rights reserved.</p> <!-- Footer එකේ copyright message එක -->
+<!-- Contact Section -->
+<section id="contact" class="py-16 md:py-24 bg-white">
+    <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold mb-4 section-title">අපව සම්බන්ධ කරගන්න</h2>
+        <p class="max-w-2xl mx-auto text-gray-600 mb-12">
+            ඔබගේ වායු සමීකරණ හෝ ශීතකරණ පද්ධතියේ ඕනෑම අවශ්‍යතාවයක් සඳහා අපව අමතන්න. ඔබගේ ගැටලුවට ඉක්මන් සහ විශ්වාසනීය විසඳුමක් ලබා දීමට අපි සූදානම්.
+        </p>
+
+        <!-- නිල ලාංඡන සමඟ යාවත්කාලීන කරන ලද බොත්තම් -->
+        <div class="flex justify-center items-center flex-wrap gap-4 md:gap-5">
+            
+            <!-- Click-to-Call බොත්තම -->
+            <a href="tel:+94711597373" class="flex items-center gap-2 bg-sky-500 text-white font-bold py-3 px-5 rounded-lg hover:bg-sky-600 transition-transform transform hover:scale-105">
+                <!-- දුරකථන අයිකනය (Font Awesome) -->
+                <i class="fas fa-phone-alt"></i>
+                <span>දැන්ම අමතන්න</span>
+            </a>
+            
+            <!-- WhatsApp බොත්තම -->
+            <a href="https://wa.me/94711597373" target="_blank" class="flex items-center gap-2 bg-green-0 text-white font-bold py-3 px-5 rounded-lg hover:bg-green-600 transition-transform transform hover:scale-105">
+                <!-- WhatsApp ලාංඡනය -->
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo" class="w-18 h-18">
+                <span>WhatsApp</span>
+            </a>
+            
+            <!-- YouTube බොත්තම -->
+            <a href="https://youtube.com/@mist-auto-ac?si=hr362_VIOgK1d8u5" target="_blank" class="flex items-center gap-2 bg-red-0 text-white font-bold py-3 px-5 rounded-lg hover:bg-red-300 transition-transform transform hover:scale-105">
+                <!-- YouTube ලාංඡනය -->
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" alt="YouTube logo" class="w-18 h-18">
+                <span>YouTube</span>
+            </a>
+            
+            <!-- Facebook බොත්තම -->
+            <a href="https://www.facebook.com/Aselasenarath20" target="_blank" class="flex items-center gap-2 bg-blue-700 text-white font-bold py-3 px-5 rounded-lg hover:bg-blue-700 transition-transform transform hover:scale-105">
+                <!-- Facebook ලාංඡනය -->
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook Logo" class="w-12 h-12">
+                <span>Facebook</span>
+            </a>
+            
+            <!-- Twitter (X) බොත්තම -->
+            <a href="https://x.com/MistAuto89473" target="_blank" class="flex items-center gap-2 bg-gray-4 text-white font-bold py-3 px-5 rounded-lg hover:bg-gray-400 transition-transform transform hover:scale-105">
+                <!-- X (Twitter) ලාංඡනය -->
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/X_logo_2023.svg" alt="X Logo" class="w-10 h-10">
+                <span>Twitter</span>
+            </a>
+            
+            <!-- Google Maps බොත්තම -->
+            <a href="https://maps.app.goo.gl/814t8NRZodujZfcK6" target="_blank" class="flex items-center gap-2 bg-white text-gray-0 font-bold py-3 px-5 rounded-lg hover:bg-gray-200 transition-transform transform hover:scale-105 border border-gray-0">
+                <!-- Google Maps ලාංඡනය -->
+                <img src="C:\Users\asela\Desktop\web mist\gmap.png" alt="Google Maps Logo" class="w-8 h-8">
+                <span>Google Maps</span>
+            </a>
+            
+        </div>
+    </div>
+</section>    
+</main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; <span id="year"></span> Mist Air Condition. සියලුම හිමිකම් ඇවිරිණි.</p>
+        </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Mobile menu toggle
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenuButton.addEventListener('click', function () {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Close mobile menu when a link is clicked
+            document.querySelectorAll('#mobile-menu a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+
+            // Set current year in footer
+            document.getElementById('year').textContent = new Date().getFullYear();
+
+            // Intersection Observer for active nav link
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-link');
+
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.4
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        navLinks.forEach(link => {
+                            link.classList.remove('active');
+                            if (link.getAttribute('href').substring(1) === entry.target.id) {
+                                link.classList.add('active');
+                            }
+                        });
+                    }
+                });
+            }, observerOptions);
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
 </body>
 </html>
