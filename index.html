@@ -175,8 +175,8 @@
         <!-- Contact Section -->
 <section id="contact" class="py-8 md:py-12 bg-white">
     <div class="container mx-auto px-6 text-center">
-        <h2 class="text-3xl font-bold mb-4 section-title">අපව සම්බන්ධ කරගන්න</h2>
-        <p class="max-w-2xl mx-auto text-gray-600 mb-12">
+        <h2 class="text-3xl font-bold mb-4 section-title"data-key="contactTitle">අපව සම්බන්ධ කරගන්න</h2>
+        <p class="max-w-2xl mx-auto text-gray-600 mb-12">data-key="contactDesc">
             ඔබගේ වායු සමීකරණ හෝ ශීතකරණ පද්ධතියේ ඕනෑම අවශ්‍යතාවයක් සඳහා අපව අමතන්න. ඔබගේ ගැටලුවට ඉක්මන් සහ විශ්වාසනීය විසඳුමක් ලබා දීමට අපි සූදානම්.
         </p>
 
@@ -187,7 +187,7 @@
             <a href="tel:+94711597373" class="flex items-center gap-2 bg-sky-500 text-white font-bold py-3 px-5 rounded-lg hover:bg-sky-600 transition-transform transform hover:scale-105">
                 <!-- දුරකථන අයිකනය (Font Awesome) -->
                 <i class="fas fa-phone-alt"></i>
-                <span>දැන්ම අමතන්න</span>
+                <span data-key="callBtn">දැන්ම අමතන්න</span>
             </a>
             
             <!-- WhatsApp බොත්තම -->
@@ -261,6 +261,12 @@
 
             const translations = {
                 si: {
+    // ... අනෙකුත් සියලුම සිංහල පරිවර්තන මෙහි ඇත ...
+
+    // අලුතින් එක් කළ යුතු කොටස
+    contactTitle: 'අපව සම්බන්ධ කරගන්න',
+    contactDesc: 'ඔබගේ වායු සමීකරණ හෝ ශීතකරණ පද්ධතියේ ඕනෑම අවශ්‍යතාවයක් සඳහා අපව අමතන්න. ඔබගේ ගැටලුවට ඉක්මන් සහ විශ්වාසනීය විසඳුමක් ලබා දීමට අපි සූදානම්.',
+    callBtn: 'දැන්ම අමතන්න',
                     brandName: 'Mist Air Condition',
                     navHome: 'මුල් පිටුව', navAbout: 'අප ගැන', navServices: 'සේවාවන්', navContact: 'අමතන්න',
                     navHomeMobile: 'මුල් පිටුව', navAboutMobile: 'අප ගැන', navServicesMobile: 'සේවාවන්', navContactMobile: 'අමතන්න',
@@ -288,6 +294,12 @@
                     footerText: `&copy; ${new Date().getFullYear()} Mist Air Condition. සියලුම හිමිකම් ඇවිරිණි.`,
                 },
                 en: {
+    // ... අනෙකුත් සියලුම ඉංග්‍රීසි පරිවර්තන මෙහි ඇත ...
+
+    // අලුතින් එක් කළ යුතු කොටස
+    contactTitle: 'Contact Us',
+    contactDesc: 'Call us for any of your air conditioning or refrigeration system needs. We are ready to provide a quick and reliable solution to your problem.',
+    callBtn: 'Call Now',
                     brandName: 'Mist Air Condition',
                     navHome: 'Home', navAbout: 'About Us', navServices: 'Services', navContact: 'Contact',
                     navHomeMobile: 'Home', navAboutMobile: 'About Us', navServicesMobile: 'Services', navContactMobile: 'Contact',
