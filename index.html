@@ -65,51 +65,100 @@
         "https://youtube.com/@mist-auto-ac?si=hr362_VIOgK1d8u5"
       ] 
     }
-    </script>
-
-    <style>
+<style>
         body { font-family: 'Noto Sans Sinhala', sans-serif; background-color: #f8fafc; }
         .hero-bg { background-size: cover; background-position: center; }
         .nav-link.active { color: #3b82f6; font-weight: 400; }
         .section-title::after { content: ''; display: block; width: 80px; height: 4px; background-color: #3b82f6; margin: 10px auto 0; border-radius: 2px; }
-    </style>
-</head>
-<body class="text-gray-800">
-<body oncontextmenu="return false;">
-    </body>
 
-    <!-- Header Section -->
-    <header id="header" class="bg-white shadow-md sticky top-0 z-50 transition-all duration-300">
-        <nav class="container mx-auto px-6 sm:px-6 py-1 grid grid-cols-3 items-center">
-            <div class="justify-self-start">
-                <a href="#home" class="flex items-center space-x-2">
-                    <img src="logo.png" class="h-16 w-auto object-contain">
-                </a>
-            </div>
-            <div class="text-center">
-                <a href="#home" class="text-lg md:text-2xl font-bold text-blue-700" data-key="brandName">Mist Air Condition</a>
-            </div>
-            <div class="hidden md:flex items-center justify-self-end space-x-4">
-                <div class="flex space-x-3 text-gray-600 font-medium">
-                    <a href="#home" class="nav-link hover:text-blue-600" data-key="navHome">මුල් පිටුව</a>
-                    <a href="#about" class="nav-link hover:text-blue-600" data-key="navAbout">අප ගැන</a>
-                    <a href="#services" class="nav-link hover:text-blue-600" data-key="navServices">සේවාවන්</a>
-                    <a href="#contact" class="nav-link hover:text-blue-600" data-key="navContact">අමතන්න</a>
+        /* Ensure the dropdown menu expands downward on hover */
+        </script>
+
+#services-menu {
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 0.375rem; /* Rounded corners */
+        width: 12rem; /* Adjust width as needed */
+    }
+
+    #services-menu a {
+        display: block;
+        padding: 0.5rem 1rem;
+        color: #1f2937; /* Gray-800 */
+        text-decoration: none;
+    }
+
+    #services-menu a:hover {
+        background-color: #f3f4f6; /* Gray-100 */
+    }
+    #services-dropdown-container:hover #services-menu {
+        display: block;
+    }
+
+#services-menu {
+    display: none; /* Initially hidden */
+    position: absolute;
+    left: 0;
+    top: 100%; /* Position below the button */
+    z-index: 50;
+    background-color: white;
+}
+</style>
+</head>
+<body class="text-gray-800" oncontextmenu="return false;">
+
+     <!-- Header Section -->
+    <header id="header" class="bg-white shadow-md sticky top-0 z-50">
+    <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+        <a href="index.html" class="flex items-center space-x-3">
+            <img src="logo.png" alt="Mist Auto A/C Logo" class="h-14 w-auto object-contain">
+        </a>
+        <div class="flex items-center space-x-4">
+            <div class="hidden md:flex items-center space-x-8 text-gray-700 font-semibold">
+                <a href="index.html" class="hover:text-blue-600" data-key="navHome">Home</a>
+                
+                <!-- Services Dropdown Menu සඳහා වන කොටස -->
+                <div class="relative" id="services-dropdown-container">
+                    <button id="services-button" class="flex items-center gap-2 hover:text-blue-600 transition-colors">
+                        <span data-key="navServices">Services</span>
+                        <svg class="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"/></svg>
+                    </button>
+                    <div id="services-menu" class="hidden absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg z-50">
+                        <a href="https://mistautoac.lk/#services" class="block px-4 py-2 text-gray-800 hover:bg-gray-100" data-key="ddAutoACService">Auto AC</a>
+                        <a href="https://mistautoac.lk/#contact" class="block px-4 py-2 text-gray-800 hover:bg-gray-100" data-key="ddRefrigeratorService">Refrigerator</a>
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100" data-key="ddWashingMachineService">Washing Machine</a>
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100" data-key="ddIndustrialService">Industrial</a>
+                    </div>
                 </div>
-                <button id="lang-switcher" class="border border-blue-600 text-blue-600 font-semibold text-sm px-3 py-1 rounded-md hover:bg-blue-50">EN</button>
+
+                <!-- Spare Parts Dropdown Menu සඳහා වන කොටස -->
+                <div class="relative" id="spare-parts-dropdown-container">
+                    <button id="spare-parts-button" class="flex items-center gap-2 bg-blue-800 text-white font-bold py-2 px-4 rounded-md hover:bg-blue-700 transition-colors">
+                        <span data-key="navSpareParts">Spare Parts & Accessories</span>
+                        <svg class="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"/></svg>
+                    </button>
+                    <div id="spare-parts-menu" class="hidden absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg z-50">
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100" data-key="ddAC">AC</a>
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100" data-key="ddAutoAC">Auto AC</a>
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100" data-key="ddRefrigerator">Refrigerator</a>
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100" data-key="ddWashingMachine">Washing Machine</a>
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100" data-key="ddRefrigerantGas">Refrigerant Gas</a>
+                    </div>
+                </div>
+
+                <a href="#contact" class="hover:text-blue-600" data-key="navContact">Contact Us</a>
             </div>
-            <div class="md:hidden justify-self-end">
-                 <button id="mobile-menu-button" class="text-gray-700"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg></button>
+            <button id="lang-switcher" class="border border-blue-600 text-blue-600 font-semibold text-sm px-3 py-1 rounded-md hover:bg-blue-50">සිං</button>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-700"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg></button>
             </div>
-        </nav>
-        <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
-            <a href="#home" class="block py-2 px-6 text-sm hover:bg-gray-100" data-key="navHomeMobile">මුල් පිටුව</a>
-            <a href="#about" class="block py-2 px-6 text-sm hover:bg-gray-100" data-key="navAboutMobile">අප ගැන</a>
-            <a href="#services" class="block py-2 px-6 text-sm hover:bg-gray-100" data-key="navServicesMobile">සේවාවන්</a>
-            <a href="#contact" class="block py-2 px-6 text-sm hover:bg-gray-100" data-key="navContactMobile">අමතන්න</a>
-            <button id="lang-switcher-mobile" class="w-full text-left py-2 px-6 text-sm hover:bg-gray-100 font-bold text-blue-600" data-key="langSwitchMobile">Switch to English</button>
         </div>
-    </header>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
+            <!-- Mobile Menu Links -->
+        </div>
+    </nav>
+</header>
+
 
     <main>
         <!-- Hero Section -->
