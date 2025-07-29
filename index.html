@@ -402,10 +402,13 @@
             }
 
             langSwitcher.addEventListener('click', switchLanguage);
-            langSwitcherMobile.addEventListener('click', switchLanguage);
+            if (langSwitcherMobile) {
+                langSwitcherMobile.addEventListener('click', switchLanguage);
+            }
 
             updateContent(currentLang);
         });
     </script>
+
 </body>
 </html>
