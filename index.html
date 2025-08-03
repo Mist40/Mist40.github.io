@@ -422,8 +422,33 @@
         });
     });
 </script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const servicesButton = document.getElementById('services-button');
+        const servicesMenu = document.getElementById('services-menu');
+        const servicesSection = document.getElementById('services');
+
+        // Scroll to "Services" section on click
+        servicesButton.addEventListener('click', (event) => {
+            event.preventDefault(); // Prevent default behavior
+            servicesSection.scrollIntoView({ behavior: 'smooth' });
+        });
+
+        // Show dropdown menu on hover
+        servicesButton.addEventListener('mouseenter', () => {
+            servicesMenu.classList.remove('hidden');
+        });
+
+        // Hide dropdown menu when mouse leaves
+        const servicesDropdownContainer = document.getElementById('services-dropdown-container');
+        servicesDropdownContainer.addEventListener('mouseleave', () => {
+            servicesMenu.classList.add('hidden');
+        });
+    });
+</script>
 </body>
 </html>
+
 
 
 
