@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO Meta Tags -->
-    <title>Air Conditioner(AC) Maintenance & AC Repair Service in Ruwanwalla kagalla | Mist Auto mobile Air conditioning</title>
+    <title>Air Conditioner(AC) Maintenance & AC Repair Service in Ruw                </div>
+                <div class="p-3 text-center bg-slate-100">
+                    <h3 class="text-xl font-bold text-gray-900" data-key="service3Title">Industrial AC & Refrigerator</h3>
+                </div>
+                </a>la kagalla | Mist Auto mobile Air conditioning</title>
 <meta name="google-site-verification" content="gVwlU7Pkxh_OiAkzepdOBXTXlWIEeDRX-kf2g3W1kU8" />
 
 <link rel="icon" type="image/png" href="logo2.png">
@@ -73,11 +77,95 @@
         .hero-bg { background-size: cover; background-position: center; }
         .nav-link.active { color: #3b82f6; font-weight: 400; }
         .section-title::after { content: ''; display: block; width: 80px; height: 4px; background-color: #3b82f6; margin: 10px auto 0; border-radius: 2px; }
+        
+        /* Hero Section Animations */
+        .hero-overlay {
+            background: rgba(0, 0, 0, 0);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            animation: overlayAnimation 15s infinite;
+        }
+        
+        .typewriter-title {
+            overflow: hidden;
+            border-right: 3px solid #87CEEB;
+            white-space: nowrap;
+            opacity: 0;
+            animation: typewriterLoop 15s infinite;
+        }
+        
+        .typewriter-subtitle {
+            opacity: 0;
+            animation: subtitleLoop 15s infinite;
+        }
+        
+        .hero-cta {
+            opacity: 0;
+            transform: translateY(20px) scale(0.8);
+            animation: ctaPopupLoop 15s infinite;
+        }
+        
+        @keyframes overlayAnimation {
+            0% { background: rgba(0, 0, 0, 0); }
+            20% { background: rgba(0, 0, 0, 0); }
+            25% { background: rgba(0, 0, 0, 0.6); }
+            90% { background: rgba(0, 0, 0, 0.6); }
+            95% { background: rgba(0, 0, 0, 0); }
+            100% { background: rgba(0, 0, 0, 0); }
+        }
+        
+        @keyframes typewriterLoop {
+            0% { width: 0; opacity: 0; border-right: 3px solid transparent; }
+            20% { width: 0; opacity: 0; border-right: 3px solid transparent; }
+            25% { width: 0; opacity: 1; border-right: 3px solid #87CEEB; }
+            50% { width: 100%; opacity: 1; border-right: 3px solid #87CEEB; }
+            55% { width: 100%; opacity: 1; border-right: 3px solid transparent; }
+            90% { width: 100%; opacity: 1; border-right: 3px solid transparent; }
+            95% { width: 0; opacity: 0; border-right: 3px solid transparent; }
+            100% { width: 0; opacity: 0; border-right: 3px solid transparent; }
+        }
+        
+        @keyframes subtitleLoop {
+            0% { opacity: 0; transform: translateY(30px); }
+            50% { opacity: 0; transform: translateY(30px); }
+            60% { opacity: 1; transform: translateY(0); }
+            90% { opacity: 1; transform: translateY(0); }
+            95% { opacity: 0; transform: translateY(30px); }
+            100% { opacity: 0; transform: translateY(30px); }
+        }
+        
+        @keyframes ctaPopupLoop {
+            0% { opacity: 0; transform: translateY(30px) scale(0.8); }
+            65% { opacity: 0; transform: translateY(30px) scale(0.8); }
+            
+            /* First popup */
+            70% { opacity: 1; transform: translateY(0) scale(1.3); }
+            72% { opacity: 1; transform: translateY(0) scale(1); }
+            
+            /* Second popup */
+            74% { opacity: 1; transform: translateY(0) scale(1.3); }
+            76% { opacity: 1; transform: translateY(0) scale(1); }
+            
+            /* Third popup */
+            78% { opacity: 1; transform: translateY(0) scale(1.3); }
+            80% { opacity: 1; transform: translateY(0) scale(1); }
+            
+            90% { opacity: 1; transform: translateY(0) scale(1); }
+            95% { opacity: 0; transform: translateY(30px) scale(0.8); }
+            100% { opacity: 0; transform: translateY(30px) scale(0.8); }
+        }
+        
+        @keyframes blink-caret {
+            from, to { border-color: transparent; }
+            50% { border-color: #87CEEB; }
+        }
     </style>
 </head>
 <body class="text-gray-800">
-<body oncontextmenu="return false;">
-    </body>
+
 
     <!-- Header Section -->
     <header id="header" class="bg-white shadow-md sticky top-0 z-50">
@@ -143,12 +231,12 @@
 
     <main>
         <!-- Hero Section -->
-        <section id="home" class="hero-bg text-white h-[50vh] min-h-[300px] flex items-center justify-center text-center" style="background-image: linear-gradient(rgba(53, 50, 50, 0.6), rgba(56, 52, 52, 0.6)), url('cover.png');">
-            <div class="container mx-auto px-6">
-                <h1 class="text-4xl md:text-5xl font-bold mb-4 leading-tight text-sky-400" data-key="heroTitle">විශ්වාසනීය වායු සමීකරණ සහ ශීතකරණ සේවා</h1>
-                <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8" data-key="heroSubtitle">උසස් තත්වයේ අමතර කොටස් බාවිතා කරමින් වසර 10කට වැඩි පළපුරුදු දක්ෂ කාර්මික ශිල්පීන්ගේ සේවාව</p>
-                <a href="#contact" class="bg-white text-blue-700 font-bold py-3 px-8 rounded-full hover:bg-gray-200 transition-transform transform hover:scale-105 inline-block animate-bounce">Call Now</a>
-
+        <section id="home" class="hero-bg text-white h-[50vh] min-h-[300px] flex items-center justify-center text-center relative overflow-hidden" style="background-image: url('cover.png');">
+            <div class="hero-overlay"></div>
+            <div class="container mx-auto px-6 relative z-10">
+                <h1 class="text-4xl md:text-4xl font-bold mb-4 leading-tight text-sky-400 typewriter-title" data-key="heroTitle" id="hero-title">විශ්වාසනීය වායු සමීකරණ සහ ශීතකරණ සේවා</h1>
+                <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8 typewriter-subtitle" data-key="heroSubtitle" id="hero-subtitle">උසස් තත්වයේ අමතර කොටස් බාවිතා කරමින් වසර 10කට වැඩි පළපුරුදු දක්ෂ කාර්මික ශිල්පීන්ගේ සේවාව</p>
+                <a href="#contact" class="bg-white text-blue-700 font-bold py-3 px-8 rounded-full hover:bg-gray-200 transition-transform transform hover:scale-105 inline-block hero-cta">Call Now</a>
             </div>
         </section>
 
@@ -161,35 +249,118 @@
         </section>
 
         <!-- Services Section -->
+        <style>
+            .service-card {
+            position: relative;
+            overflow: hidden;
+            transition: box-shadow 0.2s;
+            }
+            .service-card:hover .service-img {
+            filter: brightness(0.7);
+            transition: filter 0.3s;
+            }
+            .service-card .service-desc {
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s;
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #60a5fa;
+            background: rgba(0,0,0,0.3);
+            padding: 1.5rem;
+            text-align: center;
+            font-size: 1rem;
+            }
+            .service-card:hover .service-desc {
+            opacity: 1;
+            pointer-events: auto;
+            }
+        </style>
         <section id="services" class="py-14 md:py-20 bg-gray-600">
             <div class="container mx-auto px-6">
-                <h2 class="text-3xl font-bold text-center mb-12 section-title text-white" data-key="servicesTitle">අපගේ සේවාවන්</h2>
-                <div class="grid md:grid-cols-3 gap-8">
-                    <a href="Mist-Auto-Air-Condition.html" class="block">
-                        <div class="bg-white rounded-lg shadow-lg overflow-hidden h-full flex flex-col">
-                            <div class="p-6 text-center bg-slate-100"><h3 class="text-xl font-bold text-gray-900" data-key="service1Title">Mist Auto A/C</h3></div>
-                            <div class="relative min-h-[220px] flex items-end justify-center p-6 text-center text-white flex-grow" style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('auto 2.png'); background-size: cover; background-position: center;">
-                                <p class="text-gray-200" data-key="service1Desc">ඕනෑම වර්ගයක මෝටර් රථ සඳහා වායු සමීකරණ පද්ධති අලුත්වැඩියාව සහ සේවා කටයුතු. සියලුම අලුත්වැඩියාවන් සඳහා කල්පවතින විසඳුමක් ලබා දීමට, උසස් තත්ත්වයේ අමතර කොටස් පමණක් යොදා ගැනේ.</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="https://mistautoac.lk/" target="_blank" class="block">
-                        <div class="bg-white rounded-lg shadow-lg overflow-hidden h-full flex flex-col">
-                            <div class="p-6 text-center bg-slate-100"><h3 class="text-xl font-bold text-gray-900" data-key="service2Title">Domestic A/C & Refrigerator</h3></div>
-                            <div class="relative min-h-[220px] flex items-end justify-center p-6 text-center text-white flex-grow" style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('ac 2.png'); background-size: cover; background-position: center;">
-                                <p class="text-gray-200" data-key="service2Desc">නිවසේ භාවිතය සඳහා වන වායු සමීකරණ සහ ශීතකරණ අලුත්වැඩියා සහ නඩත්තු සේවා. ඔබගේ උපකරණවල දීර්ඝකාලීන පැවැත්ම තහවුරු කිරීමට, උසස් තත්ත්වයේ අමතර කොටස් අප විසින් සපයනු ලැබේ.</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="https://mistautoac.lk/" target="_blank" class="block">
-                        <div class="bg-white rounded-lg shadow-lg overflow-hidden h-full flex flex-col">
-                            <div class="p-6 text-center bg-slate-100"><h3 class="text-xl font-bold text-gray-900" data-key="service3Title">Industrial AC & Refrigerator</h3></div>
-                            <div class="relative min-h-[220px] flex items-end justify-center p-6 text-center text-white flex-grow" style="background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('hvac.png'); background-size: cover; background-position: center;">
-                                <p class="text-gray-200" data-key="service3Desc">කර්මාන්තශාලා සහ ව්‍යාපාරික ස්ථාන සඳහා වන විශාල පරිමාණයේ වායු සමීකරණ සහ ශීතකරණ සේවා.</p>
-                            </div>
-                        </div>
-                    </a>
+            <h2 class="text-3xl font-bold text-center mb-12 section-title text-white" data-key="servicesTitle">අපගේ සේවාවන්</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Service Card 1 - Mist Auto A/C -->
+                <a href="Mist-Auto-Air-Condition.html" class="block service-card rounded-lg shadow-lg bg-white">
+                <div class="relative min-h-[220px] flex items-end justify-center p-0 text-center flex-grow">
+                    <img src="auto 2.png" alt="Mist Auto A/C" class="service-img w-full h-[220px] object-cover transition-all duration-300">
+                    <div class="service-desc absolute inset-0 flex items-center justify-center">
+                    <p class="text-gray-200" data-key="service1Desc">ඕනෑම වර්ගයක මෝටර් රථ සඳහා වායු සමීකරණ පද්ධති අලුත්වැඩියාව සහ සේවා කටයුතු. සියලුම අලුත්වැඩියාවන් සඳහා කල්පවතින විසඳුමක් ලබා දීමට, උසස් තත්ත්වයේ අමතර කොටස් පමණක් යොදා ගැනේ.</p>
+                    </div>
                 </div>
+                <div class="p-3 text-center bg-slate-100">
+                    <h3 class="text-2xl font-bold text-gray-900" data-key="service1Title">Mist Auto A/C</h3>
+                </div>
+                </a>
+                
+                <!-- Service Card 2 - Domestic A/C & Refrigerator -->
+                <a href="https://mistautoac.lk/" target="_blank" class="block service-card rounded-lg shadow-lg bg-white">
+                <div class="relative min-h-[220px] flex items-end justify-center p-0 text-center flex-grow">
+                    <img src="ac 2.png" alt="Domestic A/C & Refrigerator" class="service-img w-full h-[220px] object-cover transition-all duration-300">
+                    <div class="service-desc absolute inset-0 flex items-center justify-center">
+                    <p class="text-gray-200" data-key="service2Desc">නිවසේ භාවිතය සඳහා වන වායු සමීකරණ සහ ශීතකරණ අලුත්වැඩියා සහ නඩත්තු සේවා. ඔබගේ උපකරණවල දීර්ඝකාලීන පැවැත්ම තහවුරු කිරීමට, උසස් තත්ත්වයේ අමතර කොටස් අප විසින් සපයනු ලැබේ.</p>
+                    </div>
+                </div>
+                <div class="p-3 text-center bg-slate-100">
+                    <h3 class="text-2xl font-bold text-gray-900" data-key="service2Title">Domestic A/C & Refrigerator</h3>
+                </div>
+                </a>
+                
+                <!-- Service Card 3 - Spare Parts & Accessories -->
+                <a href="#" class="block service-card rounded-lg shadow-lg bg-white">
+                    <div class="relative min-h-[220px] flex items-end justify-center p-0 text-center flex-grow">
+                        <img src="spare-parts.png.png" alt="Spare Parts & Accessories" class="service-img w-full h-[220px] object-cover transition-all duration-300">
+                        <div class="service-desc absolute inset-0 flex items-center justify-center">
+                            <p class="text-gray-200" data-key="service4Desc">සියලුම වර්ගයේ වාහන, ගෘහස්ථ සහ කාර්මික වායු සමීකරණ සහ ශීතකරණ පද්ධති සඳහා උසස් තත්ත්වයේ අමතර කොටස් සහ උපාංග අප සතුව ඇත. වැඩි විස්තර අවශ්‍ය නම් මෙතන ක්ලික් කරන්න...</p>
+                        </div>
+                    </div>
+                    <div class="p-3 text-center bg-slate-100">
+                        <h3 class="text-2xl font-bold text-gray-900" data-key="service4Title">Spare Parts & Accessories</h3>
+                    </div>
+                </a>
+
+                <!-- Service Card 4 - Brand New AC Unit -->
+                <a href="#" class="block service-card rounded-lg shadow-lg bg-white">
+                    <div class="relative min-h-[220px] flex items-end justify-center p-0 text-center flex-grow">
+                        <img src="new-unit.png" alt="Brand New AC Unit" class="service-img w-full h-[220px] object-cover transition-all duration-300">
+                        <div class="service-desc absolute inset-0 flex items-center justify-center">
+                            <p class="text-gray-200" data-key="service5Desc">ඔබගේ නිවසට හෝ ව්‍යාපාරික ස්ථානයට ගැලපෙන පරිදි, වගකීමක් සහිත, ප්‍රමුඛ පෙළේ සන්නාමයන්ගෙන් නවතම, ඉහළ කාර්යක්ෂමතාවයකින් යුත් A/C ඒකක සපයා සවිකර දෙනු ලැබේ. වැඩි විස්තර අවශ්‍ය නම් මෙතන ක්ලික් කරන්න...</p>
+                        </div>
+                    </div>
+                    <div class="p-3 text-center bg-slate-100">
+                        <h3 class="text-2xl font-bold text-gray-900" data-key="service5Title">Brand New AC Unit</h3>
+                    </div>
+                </a>
+
+                <!-- Service Card 5 - Auto Scanning -->
+                <a href="#" class="block service-card rounded-lg shadow-lg bg-white">
+                    <div class="relative min-h-[220px] flex items-end justify-center p-0 text-center flex-grow">
+                        <img src="Auto-Scanning.png" alt="Auto Scanning" class="service-img w-full h-[220px] object-cover transition-all duration-300">
+                        <div class="service-desc absolute inset-0 flex items-center justify-center">
+                            <p class="text-gray-200" data-key="service6Desc">නවතම තාක්ෂණික උපකරණ භාවිතා කරමින්, ඔබගේ වාහනයේ A/C පද්ධතියේ ඇති ඕනෑම ඉලෙක්ට්‍රොනික හෝ පද්ධතිමය දෝෂයක් නිවැරදිව හඳුනාගැනීම සඳහා අපි පරිගණකගත පරීක්ෂාවක් (Auto Scanning) සිදු කරන්නෙමු. වැඩි විස්තර අවශ්‍ය නම් මෙතන ක්ලික් කරන්න...</p>
+                        </div>
+                    </div>
+                    <div class="p-3 text-center bg-slate-100">
+                        <h3 class="text-2xl font-bold text-gray-900" data-key="service6Title">Auto Scanning</h3>
+                    </div>
+                </a>
+                
+                <!-- Service Card 6 - Industrial AC & Refrigerator -->
+                <a href="https://mistautoac.lk/" target="_blank" class="block service-card rounded-lg shadow-lg bg-white">
+                <div class="relative min-h-[220px] flex items-end justify-center p-0 text-center flex-grow">
+                    <img src="spare-parts.png.png" alt="Industrial AC & Refrigerator" class="service-img w-full h-[220px] object-cover transition-all duration-300">
+                    <div class="service-desc absolute inset-0 flex items-center justify-center">
+                    <p class="text-gray-200" data-key="service3Desc">කර්මාන්තශාලා සහ ව්‍යාපාරික ස්ථාන සඳහා වන විශාල පරිමාණයේ වායු සමීකරණ සහ ශීතකරණ සේවා.</p>
+                    </div>
+                </div>
+                <div class="p-3 text-center bg-slate-100">
+                    <h3 class="text-2xl font-bold text-gray-900" data-key="service3Title">Industrial Ref & Ac</h3>
+                </div>
+                </a>
+            </div>
             </div>
         </section>
 
@@ -313,11 +484,17 @@
                     aboutText: 'Mist Air Condition යනු ශ්‍රී ලංකාව තුළ වායු සමීකරණ සහ ශීතකරණ අලුත්වැඩියා ක්ෂේත්‍රයේ ප්‍රමුඛ නාමයකි. වසර 10කට අධික කාලයක් පුරා විහිදුණු අත්දැකීම් සමඟින්, ඕනෑම වර්ගයක වායු සමීකරණ සහ ශීතකරණ පද්ධතියක් සඳහා ඉහළම ගුණාත්මක සේවාවක් ලබා දීමට අපි කැපවී සිටිමු. අපගේ ප්‍රධාන අරමුණ වන්නේ, උසස් තත්වයේ අමතර කොටස් පමණක් භාවිතා කරමින්, අපගේ දක්ෂ සහ පළපුරුදු කාර්මික ශිල්පීන් හරහා ඔබේ අවශ්‍යතාවයට විශ්වාසනීය සහ කල්පවතින විසඳුමක් ලබා දීමයි.',
                     servicesTitle: 'අපගේ සේවාවන්',
                     service1Title: 'Mist Auto A/C',
-                    service1Desc: 'ඕනෑම වර්ගයක මෝටර් රථ සඳහා වායු සමීකරණ පද්ධති අලුත්වැඩියාව සහ සේවා කටයුතු. සියලුම අලුත්වැඩියාවන් සඳහා කල්පවතින විසඳුමක් ලබා දීමට, උසස් තත්ත්වයේ අමතර කොටස් පමණක් යොදා ගැනේ.',
+                    service1Desc: 'ඕනෑම වර්ගයක මෝටර් රථ සඳහා වායු සමීකරණ පද්ධති අලුත්වැඩියාව සහ සේවා කටයුතු. සියලුම අලුත්වැඩියාවන් සඳහා කල්පවතින විසඳුමක් ලබා දීමට, උසස් තත්ත්වයේ අමතර කොටස් පමණක් යොදා ගැනේවැඩි විස්තර අවශ්‍ය නම් මෙතන ක්ලික් කරන්න...',
                     service2Title: 'Domestic A/C & Refrigerator',
-                    service2Desc: 'නිවසේ භාවිතය සඳහා වන වායු සමීකරණ සහ ශීතකරණ අලුත්වැඩියාව සහ නඩත්තු සේවා. ඔබගේ උපකරණවල දීර්ඝකාලීන පැවැත්ම තහවුරු කිරීමට, උසස් තත්ත්වයේ අමතර කොටස් අප විසින් සපයනු ලැබේ.',
+                    service2Desc: 'නිවසේ භාවිතය සඳහා වන වායු සමීකරණ සහ ශීතකරණ අලුත්වැඩියාව සහ නඩත්තු සේවා. ඔබගේ උපකරණවල දීර්ඝකාලීන පැවැත්ම තහවුරු කිරීමට, උසස් තත්ත්වයේ අමතර කොටස් අප විසින් සපයනු ලැබේ වැඩි විස්තර අවශ්‍ය නම් මෙතන ක්ලික් කරන්න...',
                     service3Title: 'Industrial AC & Refrigerator',
                     service3Desc: 'කර්මාන්තශාලා සහ ව්‍යාපාරික ස්ථාන සඳහා වන විශාල පරිමාණයේ වායු සමීකරණ සහ ශීතකරණ සේවා.',
+                    service4Title: 'අමතර කොටස් සහ උපාංග',
+                    service4Desc: 'සියලුම වර්ගයේ වාහන, ගෘහස්ථ සහ කාර්මික වායු සමීකරණ සහ ශීතකරණ පද්ධති සඳහා උසස් තත්ත්වයේ අමතර කොටස් සහ උපාංග අප සතුව ඇත. වැඩි විස්තර අවශ්‍ය නම් මෙතන ක්ලික් කරන්න...',
+                    service5Title: 'නව A/C ඒකක',
+                    service5Desc: 'ඔබගේ නිවසට හෝ ව්‍යාපාරික ස්ථානයට ගැලපෙන පරිදි, වගකීමක් සහිත, ප්‍රමුඛ පෙළේ සන්නාමයන්ගෙන් නවතම, ඉහළ කාර්යක්ෂමතාවයකින් යුත් A/C ඒකක සපයා සවිකර දෙනු ලැබේ. වැඩි විස්තර අවශ්‍ය නම් මෙතන ක්ලික් කරන්න...',
+                    service6Title: 'පරිගණකගත පරීක්ෂාව',
+                    service6Desc: 'නවතම තාක්ෂණික උපකරණ භාවිතා කරමින්, ඔබගේ වාහනයේ A/C පද්ධතියේ ඇති ඕනෑම ඉලෙක්ට්‍රොනික හෝ පද්ධතිමය දෝෂයක් නිවැරදිව හඳුනාගැනීම සඳහා අපි පරිගණකගත පරීක්ෂාවක් (Auto Scanning) සිදු කරන්නෙමු. වැඩි විස්තර අවශ්‍ය නම් මෙතන ක්ලික් කරන්න...',
                     whyUsTitle: 'අප තෝරාගත යුත්තේ ඇයි?',
                     whyUs1Title: 'වසර 10+ පළපුරුද්ද', whyUs1Desc: 'ක්ෂේත්‍රයේ දශකයකට අධික විශ්වාසනීය අත්දැකීම්.',
                     whyUs2Title: 'දක්ෂ කාර්මික ශිල්පීන්', whyUs2Desc: 'පුහුණුව ලත්, පළපුරුදු කාර්මික ශිල්පීන්ගේ සේවය.',
@@ -346,11 +523,17 @@
                     aboutText: 'Mist Air Condition is a leading name in air conditioning and refrigeration repairs in Sri Lanka. With over 10 years of experience, we are committed to providing the highest quality service for any type of AC and refrigeration system. Our main goal is to provide a reliable and lasting solution to your needs through our skilled and experienced technicians, using only high-quality spare parts.',
                     servicesTitle: 'Our Services',
                     service1Title: 'Mist Auto A/C',
-                    service1Desc: 'Air conditioning system repairs and services for any type of car. Only high-quality spare parts are used to provide a durable solution for all repairs.',
+                    service1Desc: 'Air conditioning system repairs and services for any type of car. Only high-quality spare parts are used to provide a durable solution for all repairsif you need more details click here....',
                     service2Title: 'Domestic A/C & Refrigerator',
-                    service2Desc: 'Repair and maintenance services for domestic air conditioners and refrigerators. We provide high-quality spare parts to ensure the longevity of your appliances.',
-                    service3Title: 'Industrial AC & Refrigerator',
-                    service3Desc: 'Large-scale air conditioning and refrigeration services for factories and businesses.',
+                    service2Desc: 'Repair and maintenance services for domestic air conditioners and refrigerators. We provide high-quality spare parts to ensure the longevity of your appliances For more details, click here....',
+                    service3Title: 'Industrial Ref & Ac',
+                    service3Desc: 'Large-scale air conditioning and refrigeration services for factories and businesses For more details, click here...',
+                    service4Title: 'Spare Parts & Accessories', 
+                    service4Desc: 'We offer a wide range of high-quality spare parts and accessories for all types of auto, domestic, and industrial air conditioning and refrigeration systems. For more details, click here...',
+                    service5Title: 'Brand New AC Unit',
+                    service5Desc: 'We provide and install brand new, high-efficiency A/C units from leading brands to suit your home or business needs, complete with a warranty. For more details, click here...',
+                    service6Title: 'Auto Scanning',
+                    service6Desc: 'Using the latest diagnostic tools, we perform comprehensive auto scanning to accurately identify any electronic or system faults in your vehicle\'s A/C system. For more details, click here...',
                     whyUsTitle: 'Why Choose Us?',
                     whyUs1Title: '10+ Years of Experience', whyUs1Desc: 'Over a decade of trusted experience in the field.',
                     whyUs2Title: 'Skilled Technicians', whyUs2Desc: 'Service from trained and experienced technicians.',
@@ -450,7 +633,6 @@
 </script>
 </body>
 </html>
-
 
 
 
