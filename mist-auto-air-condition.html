@@ -50,6 +50,35 @@
   background-size: cover;
 }
 
+/* Dropdown menu styling */
+#services-menu, #spare-parts-menu {
+    transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+    opacity: 1;
+    visibility: visible;
+}
+
+#services-menu.hidden, #spare-parts-menu.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Dropdown container hover area extension */
+#services-dropdown-container, #spare-parts-dropdown-container {
+    position: relative;
+}
+
+/* Create invisible bridge between button and menu */
+#services-dropdown-container::after, #spare-parts-dropdown-container::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 8px;
+    background: transparent;
+    z-index: 40;
+}
+
     </style>
 </head>
 <body class="bg-white">
@@ -58,29 +87,64 @@
 
     <!-- Header Section -->
     <header id="header" class="bg-white shadow-md sticky top-0 z-50">
-        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
-            <a href="#" class="flex items-center space-x-3">
-                <img src="mist-auto-ac-logo.png" alt="Mist Auto A/C Logo" class="h-14 w-auto object-contain">
-                <span class="text-xl md:text-2xl font-extrabold text-blue-800" data-key="welcomeTitle">Welcome To Mist AUTO A/C</span>
-            </a>
-            <div class="flex items-center space-x-4">
-                <div class="hidden md:flex space-x-8 text-gray-700 font-semibold">
-                    <a href="https://mistautoac.lk/" class="hover:text-blue-600" data-key="navHome">Home</a>
-                    <a href="#services-grid" class="hover:text-blue-600" data-key="navServices">Services</a>
-                    <a href="#" class="hover:text-blue-600" data-key="navSpareParts">Spare Parts & Accessories</a>
-                </div>
-                <button id="lang-switcher" class="border border-blue-600 text-blue-600 font-semibold text-sm px-3 py-1 rounded-md hover:bg-blue-50">සිං</button>
-                <div class="md:hidden">
-                    <button id="mobile-menu-button" class="text-gray-700"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg></button>
-                </div>
+    <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+        <a href="index.html" class="flex items-center space-x-3">
+            <img src="mist-auto-ac-logo.png" alt="Mist Auto A/C Logo" class="h-14 w-auto object-contain">
+        </a>
+ <div class="text-center">
+                <a href="#home" class="text-lg md:text-2xl font-bold text-blue-700" data-key="brandName">Mist Air conditioning</a>
             </div>
-        </nav>
-        <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
-            <a href="https://mistautoac.lk/" class="block py-2 px-6 text-sm hover:bg-gray-100" data-key="navHomeMobile">Home</a>
-            <a href="#services-grid" class="block py-2 px-6 text-sm hover:bg-gray-100" data-key="navServicesMobile">Services</a>
-            <a href="#" class="block py-2 px-6 text-sm hover:bg-gray-100" data-key="navSparePartsMobile">Spare Parts & Accessories</a>
+
+        <div class="flex items-center space-x-4">
+            <div class="hidden md:flex items-center space-x-8 text-gray-700 font-semibold">
+<a href="index.html" class="hover:text-blue-600 transition-colors" data-key="navHome">Home</a>
+                
+                <!-- Services Dropdown Menu සඳහා වන කොටස -->
+                <div class="relative" id="services-dropdown-container">
+                    <button id="services-button" class="flex items-center gap-2 text-blue-600 font-semibold transition-colors">
+                        <span data-key="navServices">Services</span>
+                        <svg class="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"/></svg>
+                    </button>
+                    <div id="services-menu" class="hidden absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg z-50">
+                        <a href="mist-auto-air-condition.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 bg-blue-800 text-white" data-key="ddAutoACService">Auto AC</a>
+                        <a href="https://mistautoac.lk/#contact" class="block px-4 py-2 text-gray-800 hover:bg-gray-100" data-key="ddRefrigeratorService">Refrigerator</a>
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100" data-key="ddWashingMachineService">Washing Machine</a>
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100" data-key="ddIndustrialService">Industrial</a>
+                    </div>
+                </div>
+
+                <!-- Spare Parts Dropdown Menu සඳහා වන කොටස -->
+                <div class="relative" id="spare-parts-dropdown-container">
+<button id="spare-parts-button" class="flex items-center gap-2 hover:text-blue-600 transition-colors">
+    <span data-key="navSpareParts">Spare Parts & Accessories</span>
+
+                        <svg class="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"/></svg>
+                    </button>
+                    <div id="spare-parts-menu" class="hidden absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg z-50">
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100" data-key="ddAC">Auto AC</a>
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100" data-key="ddAutoAC">Room AC</a>
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100" data-key="ddRefrigerator">Refrigerator</a>
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100" data-key="ddWashingMachine">Washing Machine</a>
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100" data-key="ddRefrigerantGas">Refrigerant & Accessories </a>
+                    </div>
+                </div>
+
+                <a href="#contact" class="hover:text-blue-600" data-key="navContact">Contact Us</a>
+            </div>
+            <button id="lang-switcher" class="border border-blue-600 text-blue-600 font-semibold text-sm px-3 py-1 rounded-md hover:bg-blue-50">සිං</button>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-700"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg></button>
+            </div>
         </div>
-    </header>
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
+    <!-- Mobile Menu Links -->
+    <button id="lang-switcher-mobile" class="border border-blue-600 text-blue-600 font-semibold text-sm px-3 py-1 rounded-md hover:bg-blue-50">
+        සිං
+    </button>
+</div>
+        </div>
+    </nav>
+</header>
 
     <main>
         <!-- Hero Section -->
@@ -144,8 +208,8 @@
             </div>
         </section>
 
-        <!-- Contact / CTA Section -->
-        <section class="py-12 md:py-18 bg-gray-600 text-white contact-bg" style="background-image:url('logo/mist-auto-ac-call.png');"
+                <!-- Contact / CTA Section -->
+        <section class="py-12 md:py-18 bg-gray-600 text-white contact-bg" style="background-image: url('./contakbrac.png');">
             <div class="container mx-auto px-6 text-center">
                 <h2 class="text-4xl font-extrabold mb-4" data-key="contactTitle">අප සමග සම්බන්ධ වන්න!</h2>
                 <p class="max-w-2xl mx-auto mb-8" data-key="contactText">ඔබගේ Auto A/C සේවාව සඳහා කලින්ම වේලාවක් වෙන් කරවාගෙන, අනවශ්‍ය රස්තියාදුවකින් තොරව කාර්යක්ෂම සේවාවක් ලබා ගන්න. අපගේ සේවාවන් පිළිබඳ වැඩි විස්තර, පාරිභෝගික අත්දැකීම් සහ නවතම වැඩකටයුතු දැක බලා ගැනීමට පහතින් ඇති අපගේ සමාජ මාධ්‍ය අනුගමනය කරන්න (Follow කරන්න).</p>
@@ -156,11 +220,13 @@
                     <a href="https://youtube.com/@mist-auto-ac" target="_blank" class="flex items-center justify-center w-14 h-14 bg-red-6 rounded-full hover:bg-red-700" title="YouTube Channel"><img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" alt="YouTube" class="w-10 h-10"></a>
                     <a href="https://www.facebook.com/Aselasenarath20" target="_blank" class="flex items-center justify-center w-14 h-14 bg-blue-60 rounded-full hover:bg-blue-700" title="Facebook Page"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" class="w-10 h-10"></a>
                     <a href="https://x.com/MistAuto89473" target="_blank" class="flex items-center justify-center w-14 h-14 bg-gray-80 rounded-full hover:bg-gray-700" title="X (Twitter)"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/X_logo_2023.svg" alt="X" class="w-7 h-7"></a>
-                    <a href="https://maps.app.goo.gl/814t8NRZodujZfcK6" target="_blank" class="flex items-center justify-center w-14 h-14 bg-white rounded-full hover:bg-gray-200" title="Google Maps Location"><img src="logo/mist-googel-map.png" alt="Google Maps" class="w-8 h-8"></a>
+                    <a href="https://maps.app.goo.gl/814t8NRZodujZfcK6" target="_blank" class="flex items-center justify-center w-14 h-14 bg-white rounded-full hover:bg-gray-200" title="Google Maps Location"><img src="gmap.png" alt="Google Maps" class="w-8 h-8"></a>
                 </div>
             </div>
         </section>
     </main>
+
+
 
     <footer class="bg-gray-900 text-white py-6">
         <div class="container mx-auto px-6 text-center">
@@ -180,6 +246,17 @@
             // Language Switcher Logic
             const translations = {
                 si: {
+                    brandName: 'Mist Air conditioning',
+                    ddAutoACService: 'Auto AC',
+                    ddRefrigeratorService: 'Refrigerator', 
+                    ddWashingMachineService: 'Washing Machine',
+                    ddIndustrialService: 'Industrial',
+                    ddAC: 'Auto AC',
+                    ddAutoAC: 'Room AC',
+                    ddRefrigerator: 'Refrigerator',
+                    ddWashingMachine: 'Washing Machine', 
+                    ddRefrigerantGas: 'Refrigerant & Accessories',
+                    navContact: 'අමතන්න',
                     welcomeTitle: 'Welcome To Mist Auto A/C',
                     navHome: 'මුල් පිටුව', navServices: 'සේවාවන්', navSpareParts: 'අමතර කොටස්',
                     navHomeMobile: 'මුල් පිටුව', navServicesMobile: 'සේවාවන්', navSparePartsMobile: 'අමතර කොටස්',
@@ -199,6 +276,17 @@
                     footerText: `&copy; ${new Date().getFullYear()} Mist Auto A/C. සියලුම හිමිකම් ඇවිරිණි.`,
                 },
                 en: {
+                    brandName: 'Mist Air conditioning',
+                    ddAutoACService: 'Auto AC',
+                    ddRefrigeratorService: 'Refrigerator', 
+                    ddWashingMachineService: 'Washing Machine',
+                    ddIndustrialService: 'Industrial',
+                    ddAC: 'Auto AC',
+                    ddAutoAC: 'Room AC',
+                    ddRefrigerator: 'Refrigerator',
+                    ddWashingMachine: 'Washing Machine', 
+                    ddRefrigerantGas: 'Refrigerant & Accessories',
+                    navContact: 'Contact Us',
                     welcomeTitle: 'Welcome To Mist Auto A/C',
                     navHome: 'Home', navServices: 'Services', navSpareParts: 'Spare Parts & Accessories',
                     navHomeMobile: 'Home', navServicesMobile: 'Services', navSparePartsMobile: 'Spare Parts & Accessories',
@@ -243,6 +331,104 @@
             if (langSwitcherMobile) langSwitcherMobile.addEventListener('click', switchLanguage);
 
             updateContent(currentLang); // Initialize content with default language
+        });
+    </script>
+
+    <!-- Dropdown Menu JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Dropdown Menu Logic
+            const servicesButton = document.getElementById('services-button');
+            const servicesMenu = document.getElementById('services-menu');
+            const sparePartsButton = document.getElementById('spare-parts-button');
+            const sparePartsMenu = document.getElementById('spare-parts-menu');
+            const servicesDropdownContainer = document.getElementById('services-dropdown-container');
+            const sparePartsDropdownContainer = document.getElementById('spare-parts-dropdown-container');
+            const servicesSection = document.getElementById('services-grid');
+
+            function setupDropdown(button, menu, container) {
+                if (button && menu && container) {
+                    // Click functionality for dropdown toggle
+                    button.addEventListener('click', (event) => {
+                        event.stopPropagation();
+                        // Close other dropdowns before opening this one
+                        if (menu === servicesMenu) sparePartsMenu.classList.add('hidden');
+                        if (menu === sparePartsMenu) servicesMenu.classList.add('hidden');
+                        menu.classList.toggle('hidden');
+                    });
+
+                    // Hover functionality - show on button hover
+                    button.addEventListener('mouseenter', () => {
+                        menu.classList.remove('hidden');
+                    });
+
+                    // Keep menu visible when hovering over the menu itself
+                    menu.addEventListener('mouseenter', () => {
+                        menu.classList.remove('hidden');
+                    });
+
+                    // Hide only when mouse leaves the entire container (button + menu)
+                    container.addEventListener('mouseleave', () => {
+                        menu.classList.add('hidden');
+                    });
+
+                    // Prevent menu from closing when moving from button to menu
+                    menu.addEventListener('mouseleave', (event) => {
+                        // Only hide if mouse is not moving to the button or staying within container
+                        const rect = container.getBoundingClientRect();
+                        const mouseX = event.clientX;
+                        const mouseY = event.clientY;
+                        
+                        // Check if mouse is still within the container bounds
+                        if (mouseX < rect.left || mouseX > rect.right || 
+                            mouseY < rect.top || mouseY > rect.bottom) {
+                            setTimeout(() => {
+                                // Double-check if mouse is really outside before hiding
+                                if (!container.matches(':hover')) {
+                                    menu.classList.add('hidden');
+                                }
+                            }, 100);
+                        }
+                    });
+                }
+            }
+
+            setupDropdown(servicesButton, servicesMenu, servicesDropdownContainer);
+            setupDropdown(sparePartsButton, sparePartsMenu, sparePartsDropdownContainer);
+
+            // Handle double click for services section navigation
+            if (servicesButton && servicesSection) {
+                servicesButton.addEventListener('dblclick', (event) => {
+                    event.preventDefault();
+                    servicesSection.scrollIntoView({ behavior: 'smooth' });
+                });
+            }
+
+            // Close dropdowns if clicking outside
+            document.addEventListener('click', (event) => {
+                // Check if click is outside dropdown containers
+                const isServicesClick = servicesDropdownContainer && servicesDropdownContainer.contains(event.target);
+                const isSparePartsClick = sparePartsDropdownContainer && sparePartsDropdownContainer.contains(event.target);
+                
+                if (!isServicesClick && servicesMenu && !servicesMenu.classList.contains('hidden')) {
+                    servicesMenu.classList.add('hidden');
+                }
+                if (!isSparePartsClick && sparePartsMenu && !sparePartsMenu.classList.contains('hidden')) {
+                    sparePartsMenu.classList.add('hidden');
+                }
+            });
+
+            // Ensure dropdown menu items are clickable
+            document.querySelectorAll('#services-menu a, #spare-parts-menu a').forEach(link => {
+                link.addEventListener('click', (event) => {
+                    // Allow the link to work normally
+                    // Close the dropdown after clicking
+                    setTimeout(() => {
+                        servicesMenu.classList.add('hidden');
+                        sparePartsMenu.classList.add('hidden');
+                    }, 100);
+                });
+            });
         });
     </script>
 
