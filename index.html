@@ -438,11 +438,22 @@
 
     </main>
 
-    <footer class="bg-gray-800 text-white py-6">
-        <div class="container mx-auto px-6 text-center">
-            <p data-key="footerText">&copy; <span id="year"></span> Mist Air Condition. සියලුම හිමිකම් ඇවිරිණි.</p>
+<!-- යාවත්කාලීන කරන ලද Footer කොටස -->
+<footer class="bg-gray-800 text-white py-4">
+    <div class="container mx-auto px-4 text-center">
+        
+        <!-- අලුතින් එක් කළ සබැඳි -->
+        <div class="flex justify-center items-center gap-4 md:gap-8 mb-4 text-sm text-gray-400">
+            <a href="#" class="hover:text-white hover:underline" data-key="footerBlog">Blog</a>
+            <a href="#" class="hover:text-white hover:underline" data-key="footerQA">Q&A</a>
+            <a href="#" class="hover:text-white hover:underline" data-key="footerTerms">Terms</a>
         </div>
-    </footer>
+
+        <!-- දැනටමත් ඇති Copyright විස්තරය -->
+        <p data-key="footerText">&copy; <span id="year"></span> Mist Air Condition. සියලුම හිමිකම් ඇවිරිණි.</p>
+    </div>
+</footer>
+
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
@@ -505,6 +516,16 @@
                     contactDesc: 'ඔබගේ වායු සමීකරණ හෝ ශීතකරණ පද්ධතියේ ඕනෑම අවශ්‍යතාවයක් සඳහා අපව අමතන්න. ඔබගේ ගැටලුවට ඉක්මන් සහ විශ්වාසනීය විසඳුමක් ලබා දීමට අපි සූදානම්.',
                     callBtn: 'දැන්ම අමතන්න',
                     footerText: `&copy; ${new Date().getFullYear()} Mist Air Condition. සියලුම හිමිකම් ඇවිරිණි.`,
+si: {
+    // ... අනෙකුත් සියලුම සිංහල පරිවර්තන ...
+
+    // අලුතින් එක් කළ යුතු කොටස
+    footerBlog: 'බ්ලොග්',
+    footerQA: 'ප්‍රශ්න සහ පිළිතුරු',
+    footerTerms: 'නියමයන්',
+    footerText: `&copy; ${new Date().getFullYear()} Mist Air Condition. සියලුම හිමිකම් ඇවිරිණි.`,
+},
+
                 },
                 en: {
     // ... අනෙකුත් සියලුම ඉංග්‍රීසි පරිවර්තන මෙහි ඇත ...
@@ -543,7 +564,16 @@
                     contactTitle: 'Contact Us',
                     contactDesc: 'Call us for any of your air conditioning or refrigeration system needs. We are ready to provide a quick and reliable solution to your problem.',
                     callBtn: 'Call Now',
-                    footerText: `&copy; ${new Date().getFullYear()} Mist Air Condition. All rights reserved.`,
+                    footerText: `&copy; ${new Date().getFullYear()} Mist Air Condition. All rights reserved.`,en: {
+    // ... අනෙකුත් සියලුම ඉංග්‍රීසි පරිවර්තන ...
+
+    // අලුතින් එක් කළ යුතු කොටස
+    footerBlog: 'Blog',
+    footerQA: 'Q&A',
+    footerTerms: 'Terms',
+    footerText: `&copy; ${new Date().getFullYear()} Mist Air Condition. All rights reserved.`,
+}
+
                 }
             };
 
@@ -634,6 +664,7 @@
 </script>
 </body>
 </html>
+
 
 
 
