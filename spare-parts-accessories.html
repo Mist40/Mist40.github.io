@@ -57,7 +57,7 @@
 
                 <!-- Spare Parts Dropdown Menu සඳහා වන කොටස -->
                 <div class="relative" id="spare-parts-dropdown-container">
-<button id="spare-parts-button" class="flex items-center gap-2 bg-blue-800 text-white font-bold py-2 px-4 rounded-md hover:bg-blue-700 transition-colors">
+<button id="spare-parts-button" class="flex items-center gap-2 text-blue-600 font-semibold transition-colors">
     <span data-key="navSpareParts" class="text-blue-600 font-semibold">Spare Parts & Accessories</span>
 
                         <svg class="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"/></svg>
@@ -90,48 +90,37 @@
 
     <main>
         <!-- යාවත්කාලීන කරන ලද Category Navigation Bar -->
-<section class="bg-sky-200 p- 1shadow-lg">
-<!-- යාවත්කාලීන කරන ලද Category Navigation Bar -->
-<section class="bg-sky-600 p-2 shadow-lg">
+<section class="bg-sky-150 p- 1shadow-lg">
     <div class="container mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-4">
+        <!-- 'gap-x-2' මගින් කොටු අතර තිරස් ඉඩක් ලබා දේ -->
+        <div class="category-nav grid grid-cols-2 md:grid-cols-4 gap-4">
 
-            <!-- 1. Auto A/C කොටස (Active State) -->
-            <a href="#" class="active flex items-center justify-between gap-2 text-white font-bold p-3 rounded-lg bg-blue-700 transition-colors">
-                <span class="text-lg" data-key="catAuto">Auto A/C</span>
-                <!-- කුඩා ඡායාරූප සඳහා වන කොටස -->
-                <div class="flex -space-x-4">
-                    <img src="https://placehold.co/40x40/FFFFFF/000000?text=1" class="w-10 h-10 border-2 border-blue-700 rounded-full object-cover">
-                    <img src="https://placehold.co/40x40/FFFFFF/000000?text=2" class="w-10 h-10 border-2 border-blue-700 rounded-full object-cover">
-                    <img src="https://placehold.co/40x40/FFFFFF/000000?text=3" class="w-10 h-10 border-2 border-blue-700 rounded-full object-cover">
-                </div>
+            <!-- 1. Auto A/C කොටස -->
+            <a href="Auto-ac-parts.png" class="active flex flex-col items-center justify-center gap-2 text-red font-bold py-2 px-2 rounded-lg bg-blue-900 transition-colors">
+                <!-- ඡායාරූපය සඳහා වන img ටැගය -->
+                <img src="images/auto-ac-parts-ruwanwalla.png" class="w-18 h-18 object-contain">
+                <span data-key="catAuto">Auto A/C</span>
             </a>
 
             <!-- 2. Refrigerator කොටස -->
-            <a href="#" class="flex items-center justify-between gap-2 text-white font-bold p-3 rounded-lg hover:bg-sky-700 transition-colors">
-                <span class="text-lg" data-key="catFridge">Refrigerator</span>
-                <div class="flex -space-x-4">
-                    <img src="https://placehold.co/40x40/FFFFFF/000000?text=A" class="w-10 h-10 border-2 border-sky-600 rounded-full object-cover">
-                    <img src="https://placehold.co/40x40/FFFFFF/000000?text=B" class="w-10 h-10 border-2 border-sky-600 rounded-full object-cover">
-                </div>
+            <a href="images/refrigerator-parts-ruwanwalla.png" class="flex flex-col items-center justify-center gap-2 text-black font-bold py-3 px-4 rounded-lg hover:bg-sky-700 transition-colors">
+                <!-- ඡායාරූපය සඳහා වන img ටැගය -->
+                <img src="ref-part.png" class="w-18 h-18 object-contain">
+                <span data-key="catFridge">Refrigerator</span>
             </a>
 
             <!-- 3. Washing Machine කොටස -->
-            <a href="#" class="flex items-center justify-between gap-2 text-white font-bold p-3 rounded-lg hover:bg-sky-700 transition-colors">
-                <span class="text-lg" data-key="catWashing">Washing Machine</span>
-                <div class="flex -space-x-4">
-                    <img src="https://placehold.co/40x40/FFFFFF/000000?text=X" class="w-10 h-10 border-2 border-sky-600 rounded-full object-cover">
-                    <img src="https://placehold.co/40x40/FFFFFF/000000?text=Y" class="w-10 h-10 border-2 border-sky-600 rounded-full object-cover">
-                </div>
+            <a href="Washing Machine-page.html" class="flex flex-col items-center justify-center gap-2 text-black font-bold py-3 px-4 rounded-lg hover:bg-sky-700 transition-colors">
+                <!-- ඡායාරූපය සඳහා වන img ටැගය -->
+                <img src="images/washing-machine-parts-ruwanwalla.png" alt="Washing Machine Icon" class="w-18 h-18 object-contain">
+                <span data-key="catWashing">Washing Machine</span>
             </a>
 
-            <!-- 4. A/C Unit & Spare Parts කොටස -->
-            <a href="#" class="flex items-center justify-between gap-2 text-white font-bold p-3 rounded-lg hover:bg-sky-700 transition-colors">
-                <span class="text-lg" data-key="catACUnit">A/C Unit & Spare Parts</span>
-                <div class="flex -space-x-4">
-                    <img src="https://placehold.co/40x40/FFFFFF/000000?text=M" class="w-10 h-10 border-2 border-sky-600 rounded-full object-cover">
-                    <img src="https://placehold.co/40x40/FFFFFF/000000?text=N" class="w-10 h-10 border-2 border-sky-600 rounded-full object-cover">
-                </div>
+            <!-- 4. A/C Unit කොටස -->
+            <a href="A-C-Spea.html" class="flex flex-col items-center justify-center gap-2 text-black font-bold py-3 px-4 rounded-lg hover:bg-sky-700 transition-colors">
+                <!-- ඡායාරූපය සඳහා වන img ටැගය -->
+                <img src="images/ac-parts-ruwanwalla.png" class="w-18 h-18 object-contain">
+                <span data-key="catACUnit">A/C Unit & Spare Parts</span>
             </a>
 
         </div>
