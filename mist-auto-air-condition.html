@@ -129,7 +129,7 @@
                     </div>
                 </div>
 
-                <a href="#contact" class="hover:text-blue-600" data-key="navContact">Contact Us</a>
+                <a href="#" id="contact-menu-link" class="hover:text-blue-600" data-key="navContact">Contact Us</a>
             </div>
             <button id="lang-switcher" class="border border-blue-600 text-blue-600 font-semibold text-sm px-3 py-1 rounded-md hover:bg-blue-50">සිං</button>
             <div class="md:hidden">
@@ -236,6 +236,15 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
+            // Contact menu scroll to contact section
+            const contactMenuLink = document.getElementById('contact-menu-link');
+            const contactSection = document.querySelector('.contact-bg');
+            if (contactMenuLink && contactSection) {
+                contactMenuLink.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    contactSection.scrollIntoView({ behavior: 'smooth' });
+                });
+            }
             // Mobile menu toggle
             const mobileMenuButton = document.getElementById('mobile-menu-button');
             const mobileMenu = document.getElementById('mobile-menu');
