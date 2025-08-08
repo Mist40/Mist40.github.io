@@ -26,6 +26,8 @@
     </style>
 </head>
 <body class="bg-white">
+<body oncontextmenu="return false;">
+    </body>
 
     <!-- Header Section -->
     <header id="header" class="bg-white shadow-md sticky top-0 z-50">
@@ -269,9 +271,13 @@
                     menu.addEventListener('mouseenter', () => {
                         menu.classList.remove('hidden');
                     });
-                    // Hide only when mouse leaves the entire container (button + menu)
+                    // Hide only if mouse is not over button or menu after a short delay
                     container.addEventListener('mouseleave', () => {
-                        menu.classList.add('hidden');
+                        setTimeout(() => {
+                            if (!button.matches(':hover') && !menu.matches(':hover')) {
+                                menu.classList.add('hidden');
+                            }
+                        }, 100);
                     });
                 }
             }
@@ -306,7 +312,6 @@
 </body>
 
 </html>
-
 
 
 
